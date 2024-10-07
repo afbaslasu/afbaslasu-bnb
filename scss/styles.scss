@@ -1,0 +1,232 @@
+// Variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+// Global Styles
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $primary-color;
+}
+
+// Navbar
+.navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+// Banner Section with Overlay
+#banner {
+  position: relative;
+  background: url("../images/banner.jpeg") center/cover no-repeat;
+  height: 600px;
+
+  // Overlay to darken the background image
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); // Transparent overlay
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2; // Make sure text is above the overlay
+    text-align: center;
+    color: #ffffff;
+
+    h1,
+    p {
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); // Text shadow for better readability
+    }
+  }
+}
+
+// Room List Section
+#rooms {
+  .room-card {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;  // Add some space between rows
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;   // Round the corners of the cards
+  transition: transform 0.3s ease-in-out; // Smooth zoom transition
+
+  &:hover {
+    transform: scale(1.05); // Zoom in effect on hover
+  }
+
+  // Set fixed dimensions for the image
+  img {
+    width: 100%;              // Full width of the card
+    height: 200px;            // Fixed height for uniformity
+    object-fit: cover;        // Cover the area while maintaining aspect ratio
+    border-radius: 8px 8px 0 0; // Round the top corners of the image
+  }
+
+  .p-3 {
+    text-align: center; // Center the text inside
+  }
+
+    // Animate the room cards
+    @keyframes roomAnimation {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    // Apply animation to all room cards
+    animation: roomAnimation 6s ease-in-out infinite; // Continuous subtle zoom animation
+  }
+}
+
+// Reviews Section with Better Styling
+#reviews {
+  position: relative;             // Allow absolute positioning for child elements
+  overflow: hidden;              // Hide overflow to prevent scroll bars
+
+  .background-video {
+    position: absolute;           // Position the video absolutely
+    top: 0;
+    left: 0;
+    width: 100%;                  // Full width
+    height: 100%;                 // Full height
+    object-fit: cover;            // Cover the section without distortion
+    z-index: 1;                   // Send to the back
+  }
+
+  .overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); // Dark overlay for text visibility
+    z-index: 2;                   // Above the video
+  }
+
+  .container {
+    position: relative;           // Keep container relative
+    z-index: 3;                   // Above the overlay
+    padding: 40px;                // Add padding for content
+
+    h2 {
+      color: #ffffff;             // White text for visibility
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); // Optional shadow for better readability
+      position: absolute;          // Positioning to be adjusted
+      bottom: 10px;                // Distance from bottom
+      left: 10px;                  // Distance from left
+    }
+
+    .reviews-container {
+      position: relative;          // Ensure this is positioned correctly
+      height: 400px;              // Fixed height for the review area
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;         // Center align the review content
+
+      .review {
+        position: absolute;
+        top: 100%;
+        opacity: 0;
+        transition: opacity 1s ease-in-out, bottom 1s ease-in-out; // Smooth transitions
+        text-align: left;
+
+        img {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          margin-bottom: 10px;
+          border: 2px solid $secondary-color; // Adjust as needed
+        }
+
+        p {
+          font-size: 1.2rem;
+          color: $secondary-color; // Adjust as needed
+          margin-bottom: 10px;
+        }
+
+        footer {
+          font-weight: bold;
+          color: white;
+        }
+      }
+
+      // Animation for rotating reviews
+      @keyframes reviewSlide {
+        0%, 12.5% {
+          opacity: 1;
+          top: 0;
+        }
+        16.67%, 100% {
+          opacity: 0;
+          top: 100%;
+        }
+      }
+
+      // Apply animation for each review
+      .review:nth-child(1) {
+        animation: reviewSlide 15s infinite;
+      }
+      .review:nth-child(2) {
+        animation: reviewSlide 15s infinite 4s;
+      }
+      .review:nth-child(3) {
+        animation: reviewSlide 15s infinite 8s;
+      }
+      .review:nth-child(4) {
+        animation: reviewSlide 15s infinite 12s;
+      }
+      .review:nth-child(5) {
+        animation: reviewSlide 15s infinite 16s;
+      }
+      .review:nth-child(6) {
+        animation: reviewSlide 15s infinite 20s;
+      }
+
+      // Pause animation on hover
+      &:hover .review {
+        animation-play-state: paused;
+      }
+    }
+  }
+}
+
+
+// Booking Form
+#contact {
+  background-color: #fff;
+  padding: 3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  .form-control,
+  .form-select {
+    margin-bottom: 1rem;
+  }
+}
+
+// Footer
+footer {
+  background-color: $primary-color;
+  color: #fff;
+  p {
+    margin: 0;
+  }
+}

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmileLink BnB</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous">
+
+<!--  adding font awesome icons  -->
+  <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <!-- adding bootstrap css   -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="logo-container">
+          <a class="navbar-brand" href="#"
+            ><img src="../images/logo.png" alt="smilelink logo"
+          /></a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rooms">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero/Banner Section -->
+    <section id="banner" class="text-center text-light banner-section">
+      <div
+        class="container h-100 d-flex justify-content-center align-items-center"
+      >
+        <div>
+          <h1 class="display-4">Welcome to SmileLink BnB</h1>
+          <p class="lead">Discover luxury stays, cozy rooms, and more!</p>
+          <a href="#rooms" class="btn btn-primary">Explore Rooms</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Room Listings Section -->
+    <section id="rooms" class="container py-5">
+      <div class="text-center mb-5">
+        <h2>Our Rooms</h2>
+        <p>Find the best room for your stay</p>
+        <input
+          type="text"
+          class="form-control w-50 mx-auto"
+          id="search"
+          placeholder="Filter by room type"
+        />
+      </div>
+      <div class="row" id="room-list">
+        <div class="col-md-6 room-card">
+          <img src="images/room1.jpg" class="img-fluid" alt="Luxury Suite" />
+          <div class="p-3">
+            <h4>Luxury Suite</h4>
+            <p>$120/night</p>
+          </div>
+        </div>
+        <div class="col-md-6 room-card">
+          <img src="images/room2.jpg" class="img-fluid" alt="Cozy Apartment" />
+          <div class="p-3">
+            <h4>Cozy Apartment</h4>
+            <p>$100/night</p>
+          </div>
+        </div>
+        <div class="col-md-6 room-card">
+          <img src="images/room3.jpg" class="img-fluid" alt="Standard Room" />
+          <div class="p-3">
+            <h4>Standard Room</h4>
+            <p>$80/night</p>
+          </div>
+        </div>
+        <div class="col-md-6 room-card">
+          <img
+            src="images/room4.jpg"
+            class="img-fluid"
+            alt="Another Standard Room"
+          />
+          <div class="p-3">
+            <h4>Standard Room</h4>
+            <p>$80/night</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-5">
+      <video autoplay muted loop class="background-video">
+        <source src="../images/apartment.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay"></div>
+      <div class="container">
+        <h2 class="text-left mb-5">Customer Reviews</h2>
+        <div class="reviews-container">
+          <!-- Reviews will be loaded dynamically -->
+          <div class="review">
+            <img src="../images/totti.jpg" alt="Customer 1" />
+            <p>
+              "smileLink took the time to understand our unique needs and preferences. They tailored their search to find properties that perfectly matched what we were looking for."
+            </p>
+            <footer>— Ibas Kunle</footer>
+          </div>
+          <div class="review">
+            <img src="../images/profilePix.png" alt="Customer 1" />
+            <p>
+              "The efficiency with which smileLink handled our transaction was impressive. They ensured all paperwork was completed promptly and accurately, making the process smooth and hassle-free."
+            </p>
+            <footer>— Smile Ibas</footer>
+          </div>
+          <div class="review">
+            <img src="../images/review-image5.jpg" alt="Customer 1" />
+            <p>
+              "We felt genuinely cared for throughout the entire process. smileLink was always available to answer our questions and provide support, making us feel valued as clients." 
+            </p>
+            <footer>— Kahf Ibas</footer>
+          </div>
+          <div class="review">
+            <img src="../images/review-image2.jpg" alt="Customer 1" />
+            <p>
+              "As first-time buyers, we were quite nervous, but smileLink guided us through every step with patience and clarity. Their expertise made the process much less daunting."
+            </p>
+            <footer>— Rafas Isla</footer>
+          </div>
+          <div class="review">
+            <img src="../images/review-image3.jpg" alt="Customer 1" />
+            <p>
+              ""We highly recommend smileLink to anyone looking to buy or sell a home. Their dedication, knowledge, and professionalism are unmatched."
+            </p>
+            <footer>— Beejay Lala</footer>
+          </div>
+          <!-- More reviews added similarly -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="contact" class="container py-5">
+      <h2 class="text-center">Book Your Stay</h2>
+      <form id="booking-form" class="row g-3">
+        <!-- Full Name -->
+        <div class="col-md-6">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullName" required />
+          <div class="invalid-feedback">
+            Only letters are allowed. Numbers are not permitted.
+          </div>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" required />
+          <div class="invalid-feedback">
+            Please enter a valid Nigerian phone number.
+          </div>
+        </div>
+
+        <!-- Room Type -->
+        <div class="col-md-6">
+          <label for="roomType" class="form-label">Room Type</label>
+          <select id="roomType" class="form-select" required>
+            <option value="suite">Luxury Suite</option>
+            <option value="apartment">Cozy Apartment</option>
+            <option value="standard">Standard Room</option>
+          </select>
+        </div>
+
+        <!-- Check-In Date -->
+        <div class="col-md-6">
+          <label for="checkIn" class="form-label">Check-In Date</label>
+          <input type="date" class="form-control" id="checkIn" required />
+        </div>
+
+        <!-- Check-Out Date -->
+        <div class="col-md-6">
+          <label for="checkOut" class="form-label">Check-Out Date</label>
+          <input type="date" class="form-control" id="checkOut" required />
+        </div>
+
+        <!-- Number of Guests -->
+        <div class="col-md-6">
+          <label for="guests" class="form-label">Number of Guests</label>
+          <input type="number" class="form-control" id="guests" required />
+        </div>
+
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary">Submit Booking</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Google Map Section -->
+    <section id="map" class="container py-5">
+      <h3 class="text-center mb-4">Our Office Location</h3>
+      <div class="map-responsive">
+        <iframe
+          src="https://www.google.com/maps?q=3,%20Cool%20Room,%20Opposite%20Dutse%20Market,%20Bwari%20Area%20Council,%20Federal%20Capital%20Territory,%20Abuja&output=embed"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </section>
+    <section class="slider-section">
+      <div class="slider">
+        <div class="slides">
+          <div
+            class="slide"
+            style="background-image: url('../images/room1.jpg')"
+          >
+            <div class="overlay">
+              <h2>Let's Build Your Dream House</h2>
+              <p>
+                Luxurious apartment, yet affordable. Installment payment plan is
+                available. At SmileLink, we're building heavenly mansions on
+                earth. Think SmileLink, Think Real Estate.
+              </p>
+              <button>Buy Now</button>
+            </div>
+          </div>
+          <div
+            class="slide"
+            style="background-image: url('../images/room2.jpg')"
+          >
+            <div class="overlay">
+              <h2>Let's Build Your Dream House</h2>
+              <p>
+                Luxurious apartment, yet affordable. Installment payment plan is
+                available. At SmileLink, we're building heavenly mansions on
+                earth. Think SmileLink, Think Real Estate.
+              </p>
+              <button>Buy Now</button>
+            </div>
+          </div>
+          <div
+            class="slide"
+            style="background-image: url('../images/room3.jpg')"
+          >
+            <div class="overlay">
+              <h2>Let's Build Your Dream House</h2>
+              <p>
+                Luxurious apartment, yet affordable. Installment payment plan is
+                available. At SmileLink, we're building heavenly mansions on
+                earth. Think SmileLink, Think Real Estate.
+              </p>
+              <button>Buy Now</button>
+            </div>
+          </div>
+          <div
+            class="slide"
+            style="background-image: url('../images/room4.jpg')"
+          >
+            <div class="overlay">
+              <h2>Let's Build Your Dream House</h2>
+              <p>
+                Luxurious apartment, yet affordable. Installment payment plan is
+                available. At SmileLink, we're building heavenly mansions on
+                earth. Think SmileLink, Think Real Estate.
+              </p>
+              <button>Buy Now</button>
+            </div>
+          </div>
+          <div
+            class="slide"
+            style="background-image: url('../images/room5.jpg')"
+          >
+            <div class="overlay">
+              <h2>Let's Build Your Dream House</h2>
+              <p>
+                Luxurious apartment, yet affordable. Installment payment plan is
+                available. At SmileLink, we're building heavenly mansions on
+                earth. Think SmileLink, Think Real Estate.
+              </p>
+              <button>Buy Now</button>
+            </div>
+          </div>
+          <div
+            class="slide"
+            style="background-image: url('../images/room6.jpg')"
+          >
+            <div class="overlay">
+              <h2>Let's Build Your Dream House</h2>
+              <p>
+                Luxurious apartment, yet affordable. Installment payment plan is
+                available. At SmileLink, we're building heavenly mansions on
+                earth. Think SmileLink, Think Real Estate.
+              </p>
+              <button>Buy Now</button>
+            </div>
+          </div>
+          <div
+            class="slide"
+            style="background-image: url('../images/room7.jpg')"
+          >
+            <div class="overlay">
+              <h2>Let's Build Your Dream House</h2>
+              <p>
+                Luxurious apartment, yet affordable. Installment payment plan is
+                available. At SmileLink, we're building heavenly mansions on
+                earth. Think SmileLink, Think Real Estate.
+              </p>
+              <button>Buy Now</button>
+            </div>
+          </div>
+          <div
+            class="slide"
+            style="background-image: url('../images/room8.jpg')"
+          >
+            <div class="overlay">
+              <h2>Let's Build Your Dream House</h2>
+              <p>
+                Luxurious apartment, yet affordable. Installment payment plan is
+                available. At SmileLink, we're building heavenly mansions on
+                earth. Think SmileLink, Think Real Estate.
+              </p>
+              <button>Buy Now</button>
+            </div>
+          </div>
+          <!-- Clone the first slide for seamless transition -->
+          <div
+            class="slide"
+            style="background-image: url('../images/room1.jpg')"
+          >
+            <div class="overlay">
+              <h2>Let's Build Your Dream House</h2>
+              <p>
+                Luxurious apartment, yet affordable. Installment payment plan is
+                available. At SmileLink, we're building heavenly mansions on
+                earth. Think SmileLink, Think Real Estate.
+              </p>
+              <button>Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="arrow arrow-left">&#10094;</div>
+        <div class="arrow arrow-right">&#10095;</div>
+      </div>
+    </section>
+
+    <!-- Bonanza Section -->
+     <div class="container-fluid-bonanza" id="hotel-1">
+<!--   adding logo to container   -->
+    <!-- <div id="logo"><i class="fa-solid fa-hotel"></i></div> -->
+<!--   adding a background mask element   -->
+    <div class="mask">
+<!--    adding info    -->
+      <h1>'mber' Apartment Bonanza</h1>
+      <h2 id="hotel-name"></h2>
+      <p id="original-price"></p>
+      <p id="sale-price"></p>
+      <p>Get 40% discount in our 'mber' bonanza package</p>
+      <p id="offer-ends"></p>
+<!--    closing mask    -->
+    </div>
+<!--  closing the container    -->
+  </div>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>3 Cool Room, Opposite Dutse Market, Kubwa, Abuja</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>08160175628</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>smile@c2harvard.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="../images/logo.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>At smileLink we design and build heavenly mansions here on earth. Think smileLink, Think Real Estate Development.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="https://web.facebook.com/ibaslasu/" target="_blank"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="https://twitter.com/afbaslasu" target="_blank"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="https://youtube.com/afbaslasu" target="_blank"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2024, All Right Reserved <a href="https://ibaslogic.com">smileLink</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

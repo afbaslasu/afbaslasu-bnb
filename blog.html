@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>smileLink Blog</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    /* .bg-multiple-color {
+      background: linear-gradient(to right, #f87171, #fca5a5);
+      margin-top: 50px;
+    } */
+    
+    .bg-multiple-color {
+  background: linear-gradient(to right, blue, red, yellow);
+  margin-top: 50px;
+}
+
+
+    .button-border {
+      border: 1px solid #ccc;
+      color: #333;
+      transition: background-color 0.3s ease;
+    }
+
+    .button-border:hover {
+      background-color: #eee;
+    }
+
+    .content-main {
+      padding: 20px;
+    }
+
+    .popup-content {
+      padding: 20px;
+    }
+
+    .popup-title {
+      background-color: #f2f2f2;
+      padding: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="fixed-top bg-white shadow">
+    <div class="container py-2">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand font-weight-bold text-lg" href="#">smileLink</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                EN <i class="fas fa-caret-down"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                <a class="dropdown-item" href="#">ID</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-multiple-color py-5">
+    <div class="container text-center">
+      <h1 class="text-white font-weight-bold display-4">Think SmileLink, Think Real Estate</h1>
+      <p class="text-white lead">Make your home heavenly resort, here on earth</p>
+      <a href="#template-features" class="btn btn-outline-light mt-3">Schedule Appointment</a>
+    </div>
+  </section>
+
+  <section class="content-main" id="template-features">
+    <div class="container text-center">
+      <h2 class="font-weight-bold mb-4">Our Service Procedure</h2>
+      <p>We provide seemless process for you to build your dream home</p>
+
+      <div class="row mt-5">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="fa-regular fa-handshake fa-3x text-primary mb-3"></i>
+              <h5 class="card-title font-weight-bold">Initial Consultation</h5>
+              <p class="card-text">Understanding our client’s preferences, budget, and desired location.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="fa-solid fa-house-user fa-3x text-primary mb-3"></i>
+              <h5 class="card-title font-weight-bold">Home Search</h5>
+              <p class="card-text">Scanning our gallery properties and arranging visits to view them.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="fa-solid fa-money-check-dollar fa-3x text-primary mb-3"></i>
+              <h5 class="card-title font-weight-bold">Financing Assistance</h5>
+              <p class="card-text">Guiding clients through mortgage options and helping in securing financial approval.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="fa-solid fa-location-dot fa-3x text-primary mb-3"></i>
+              <h5 class="card-title font-weight-bold">Location Verification</h5>
+              <p class="card-text">Coordinating inspections and verifying the property's condition and legal standing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="fa-regular fa-user fa-3x text-primary mb-3"></i>
+              <h5 class="card-title font-weight-bold">Home Inspection</h5>
+              <p class="card-text">Coordinating inspections and verifying the property's condition and legal standing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="fa-solid fa-universal-access fa-3x text-primary mb-3"></i>
+              <h5 class="card-title font-weight-bold">Closing the Deal</h5>
+              <p class="card-text">Finalizing paperwork, securing financing, completing sale and handing property ownership to client.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-main" id="template-plugin">
+    <div class="container text-center">
+      <h2 class="font-weight-bold mb-4">smileLink Building Template</h2>
+      <p>Our building types cater to different preferences, lifestyles, and budgets of all our clients</p>
+
+      <div class="row mt-5">
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#ampLiteModal">
+            Single-Family Home
+          </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#insertToPostModal">
+            Duplex Unit
+          </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#splitPostModal">
+            Triplex Unit
+          </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#shortlinkModal">
+            Fourplex Unit
+          </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#safelinkModal">
+            Townhouse Unit
+          </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#commentSystemModal">
+            Condominium (Condo)
+          </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#tableOfContentModal">
+            Co-op (Cooperative)
+          </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#adsenseModal">
+            Apartment Building
+          </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#disableCopyPasteModal">
+            High-Rise Apartment
+          </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#singlePageApplicationModal">
+            Mid-Rise Apartment
+          </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#dynamicShortcodeModal">
+            Low-Rise Apartment
+          </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#analyticsModal">
+            Loft Building
+          </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#progressiveWebAppModal">
+            Penthouse Building
+          </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#watermarkModal">
+            Garden Apartment
+          </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#lightboxModal">
+            Villa VIP
+          </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#bladeCodesModal">
+            Bungalow
+          </button>
+        </div>
+        <div class="col-md-4 mb-4">
+          <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#liveSearchModal">
+            Presidential Suite
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-main" id="template-dashboard">
+    <div class="container text-center">
+      <h2 class="font-weight-bold mb-4">Project Dashboard</h2>
+      <p>Schedule a meeting with us, to view, scan, and navigate through our rich project design gallery demo</p>
+
+      <a href="https://ibaslogic.com" class="btn btn-outline-primary mt-3">Project Dashboard Demo</a>
+      <div class="row mt-5">
+        <div class="col-md-6 mb-4">
+          <img src="images/room2.jpg" class="img-fluid rounded" alt="Global Settings">
+        </div>
+        <div class="col-md-6 mb-4">
+          <img src="images/room3.jpg" class="img-fluid rounded" alt="Menu & Navigation">
+        </div>
+        <div class="col-md-6 mb-4">
+          <img src="images/room7.jpg" class="img-fluid rounded" alt="Style & Customization">
+        </div>
+        <div class="col-md-6 mb-4">
+          <img src="images/room5.jpg" class="img-fluid rounded" alt="Plugins & Integrations">
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <iframe width="560" height="315" src="../images/apartment.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-main" id="template-price">
+    <div class="container text-center">
+      <h2 class="font-weight-bold mb-4">SmileLink Template Pricing</h2>
+      <p>Get affordable luxirious apartment at smileLink</p>
+
+      <div class="row mt-5">
+        <div class="col-md-4 mb-4">
+          <div class="card border-primary">
+            <div class="card-header bg-primary text-white">Luxury Penthouse</div>
+            <div class="card-body">
+              <h3 class="card-title font-weight-bold text-primary">#200,000,000</h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Location: City Center</li>
+                <li class="list-group-item">Size: 3,500 sq. ft</li>
+                <li class="list-group-item">Bedrooms: 4</li>
+                <li class="list-group-item">Bathrooms: 3.5</li>
+                <li class="list-group-item">Full support</li>
+                <li class="list-group-item">Amenities: Private rooftop terrace, 24-hour concierge, gym, swimming pool, premium security.</li>
+                
+              <a href="https://ibaslogic.com" class="btn btn-primary mt-3">Choose Package</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card border-primary">
+            <div class="card-header bg-primary text-white">Townhouse</div>
+            <div class="card-body">
+              <h3 class="card-title font-weight-bold text-primary">#35,000,000</h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Location: Suburban Area</li>
+                <li class="list-group-item">Size: 2,200 sq. ft</li>
+                <li class="list-group-item">Bedrooms: 3</li>
+                <li class="list-group-item">Bathrooms: 2.5</li>
+                <li class="list-group-item">Maintenance Support</li>
+                <li class="list-group-item">Amenities: Private garage, backyard, community park, and playground.</li>
+              </ul>
+              <a href="https://ibaslogic.com" class="btn btn-primary mt-3">Choose Package</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card border-danger">
+            <div class="card-header bg-danger text-white">Studio Apartment</div>
+            <div class="card-body">
+              <h3 class="card-title font-weight-bold text-danger">#18,500,000</h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Location: Urban Neighborhood</li>
+                <li class="list-group-item">Size: 600 sq. ft</li>
+                <li class="list-group-item">Bedrooms: 1 (open plan)</li>
+                <li class="list-group-item">Bathrooms: 1</li>
+                <li class="list-group-item text-muted"><del>Maintenance Support</del></li>
+                <li class="list-group-item">Amenities: Close to public transport, laundry in building, and secure entry point</li>
+              </ul>
+              <a href="https://ibaslogic.com" class="btn btn-danger mt-3">Choose Package</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-main" id="template-collection">
+    <div class="container text-center">
+      <h2 class="font-weight-bold mb-4">Architectural Designs</h2>
+      <p>Architectural templates specially designed by our team of experts</p>
+
+      <div class="row mt-5">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="../images/Penthouse.webp" class="card-img-top" alt="Avia Template">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Penthouse</h5>
+              <a href="https://ibaslogic.com" class="btn btn-outline-primary">Detail</a>
+              <a href="index.html" class="btn btn-outline-primary">Blueprint</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="../images/townhouse.webp" class="card-img-top" alt="Minima Lite Template">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">TownHouse</h5>
+              <a href="https://ibaslogic.com" class="btn btn-outline-primary">Detail</a>
+              <a href="index.html" class="btn btn-outline-primary">Blueprint</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="../images/studiohouse.webp" class="card-img-top" alt="Text On Template">
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Studiohouse</h5>
+              <a href="https://ibaslogic.com" class="btn btn-outline-primary">Detail</a>
+              <a href="index.html" class="btn btn-outline-primary">Blueprint</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-main" id="testimony">
+    <div class="container text-center">
+      <h2 class="font-weight-bold mb-4">Testimony</h2>
+      <p>What our clients say about our building designs</p>
+
+      <div class="row mt-5">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-quote-left fa-2x text-muted"></i>
+              <p class="card-text">"Our experience working with smileLink has been nothing short of remarkable. From the very beginning, they took the time to truly understand our vision and needs for our commercial building project. The designs they presented were not only aesthetically stunning but also practical and sustainable. They incorporated natural light and energy-efficient materials, which aligned perfectly with our eco-conscious approach. The team's attention to detail and ability to blend modern design with functional spaces is truly impressive. We’re proud to showcase a building that reflects both innovation and beauty, thanks to smileLink."</p>
+              <h6 class="card-subtitle mb-2 text-muted text-center font-weight-bold">Kahf Ibas</h6>
+              <a href="https://www.afifsharing.com" class="card-link">https://c2harvard.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-quote-left fa-2x text-muted"></i>
+              <p class="card-text">"We approached smileLink for a residential project, and they exceeded our expectations at every step. The design phase was collaborative and creative. They listened to our ideas and provided insightful recommendations, turning our vague concepts into a cohesive, breathtaking design. The attention to detail was evident in every aspect, from the exterior facade to the interior flow of rooms. The end result is a home that perfectly reflects our lifestyle – open, welcoming, and full of character. We’ve had countless compliments on the architectural design, and we couldn’t be happier with the outcome."</p>
+              <h6 class="card-subtitle mb-2 text-muted text-center font-weight-bold">Beejay Lala</h6>
+              <a href="https://www.salesharga.com/" class="card-link">https://c2harvard.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-quote-left fa-2x text-muted"></i>
+              <p class="card-text">As a real estate developer, I have worked with many design firms, but smileLink stands out for their professionalism and innovative approach. We entrusted them with a multi-unit housing project, and they delivered a design that is both functional and attractive. What impressed us most was their ability to maximize space while maintaining a high standard of living for future tenants. Their design incorporated modern amenities, thoughtful communal spaces, and a sleek, contemporary aesthetic that appeals to today’s renters. Our project was completed on time, and the feedback from buyers has been overwhelmingly positive. We will definitely be working with them again on future developments.</p>
+              <h6 class="card-subtitle mb-2 text-muted text-center font-weight-bold">Ibas Kunle</h6>
+              <a href="https://www.selowtekno.com" class="card-link">https://ibaslogic.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-quote-left fa-2x text-muted"></i>
+              <p class="card-text">Working with smileLink on our mixed-use development was a game changer. They brought a fresh perspective that allowed us to reimagine the space in ways we hadn’t considered. Their design expertly balances residential, retail, and office spaces, creating a vibrant community feel. The integration of sustainable features like rooftop gardens and energy-efficient systems has made the building not only beautiful but also environmentally responsible. Their team’s professionalism and ability to handle complex challenges made the entire process smooth and stress-free. We are beyond thrilled with the final result and have received nothing but praise from tenants and stakeholders alike.</p>
+              <h6 class="card-subtitle mb-2 text-muted text-center font-weight-bold">Afbas Ibas</h6>
+              <a href="https://www.wiranshan.com" class="card-link">https://afbaslasu.github.io</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-main" id="free-support">
+    <div class="container text-center">
+      <h2 class="font-weight-bold mb-4">24/7 Client Support</h2>
+      <p>Join for information on investment opportunities in real estate</p>
+      <a href="https://www.youtube.com/user/afbaslasu" target="_blank" class="btn btn-outline-primary mt-3">Join smileLink Youtube Channel</a>
+    </div>
+  </section>
+
+  <section class="content-main" id="free-tools">
+    <div class="container text-center">
+      <h2 class="font-weight-bold mb-4">Free Tools</h2>
+      <p>A collection of free tools that make you more productive</p>
+
+      <div class="row mt-5">
+        <div class="col-md-4 mb-4">
+          <a href="https://www.youtube.com/user/afbaslasu" class="btn btn-outline-primary btn-block">CAD Software: AutoCAD, Revit, and SketchUp</a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="https://www.youtube.com/user/afbaslasu" class="btn btn-outline-primary btn-block">Building Information Modeling (BIM): ArchiCAD</a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="https://www.youtube.com/user/afbaslasu" class="btn btn-outline-primary btn-block">3D Modeling Software: Rhinoceros and Autodesk 3ds Max</a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="https://www.youtube.com/user/afbaslasu" class="btn btn-outline-primary btn-block">Collaboration Tools: Slack, Trello, and Microsoft Teams</a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="https://www.youtube.com/user/afbaslasu" class="btn btn-outline-primary btn-block">Virtual and Augmented Reality: Enscape and Twinmotion</a>
+        </div>
+        <div class="col-md-4 mb-4">
+          <a href="https://www.youtube.com/user/afbaslasu" class="btn btn-outline-primary btn-block">AI Tools: Hypar and qbiq to generate smart architectural plans</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-12 text-center">
+          <h3 class="font-weight-bold">Payment Method</h3>
+          <img src="https://theme62.com/images/web/payment/logo/paypal.svg" alt="PayPal" class="img-fluid" style="height: 20px;">
+          <img src="https://theme62.com/images/web/payment/logo/wise.svg" alt="Wise" class="img-fluid" style="height: 15px;">
+          <img src="https://theme62.com/images/web/payment/logo/cryptocurrency.png" alt="Cryptocurrency" class="img-fluid" style="height: 24px;">
+          <img src="https://theme62.com/images/web/payment/logo/atmbersama.png" alt="ATM Bersama" class="img-fluid" style="height: 18px;">
+          <img src="https://theme62.com/images/web/payment/logo/prima.png" alt="Prima" class="img-fluid" style="height: 18px;">
+          <img src="https://theme62.com/images/web/payment/logo/alto.png" alt="Alto" class="img-fluid" style="height: 18px;">
+          <img src="https://theme62.com/images/web/payment/logo/bni.svg" alt="BNI" class="img-fluid" style="height: 18px;">
+          <img src="https://theme62.com/images/web/payment/logo/mandiri.svg" alt="Mandiri" class="img-fluid" style="height: 18px;">
+          <img src="https://theme62.com/images/web/payment/logo/permata.svg" alt="Permata" class="img-fluid" style="height: 18px;">
+          <img src="https://theme62.com/images/web/payment/logo/bri.svg" alt="BRI" class="img-fluid" style="height: 18px;">
+          <img src="https://theme62.com/images/web/payment/logo/bsi.svg" alt="BSI" class="img-fluid" style="height: 18px;">
+          <img src="https://theme62.com/images/web/payment/logo/alfamart.svg" alt="Alfamart" class="img-fluid" style="height: 18px;">
+          <img src="https://theme62.com/images/web/payment/logo/qris.svg" alt="QRIS" class="img-fluid" style="height: 18px;">
+          <img src="https://theme62.com/images/web/payment/logo/linkaja.svg" alt="LinkAja" class="img-fluid" style="height: 22px;">
+          <img src="https://theme62.com/images/web/payment/logo/shopeepay.svg" alt="ShopeePay" class="img-fluid" style="height: 18px;">
+          <img src="https://theme62.com/images/web/payment/logo/gopay.svg" alt="GoPay" class="img-fluid" style="height: 16px;">
+          <img src="https://theme62.com/images/web/payment/logo/dana.svg" alt="Dana" class="img-fluid" style="height: 17px;">
+          <img src="https://theme62.com/images/web/payment/logo/ovo.svg" alt="OVO" class="img-fluid" style="height: 16px;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="text-muted mb-0">© 2024 <a href="https://ibaslogic.com">ibaslogic.com</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals for Plugin Information -->
+  <div class="modal fade" id="ampLiteModal" tabindex="-1" role="dialog" aria-labelledby="ampLiteModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ampLiteModalLabel">AMP Lite</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          AMP Lite plugin can load blogs very quickly especially on Mobile devices.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="insertToPostModal" tabindex="-1" role="dialog" aria-labelledby="insertToPostModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="insertToPostModalLabel">Insert to Post</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Insert to Post plugin allows you to insert something into a post.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- More modals for other plugins... (Similar structure) -->
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+  
+  <!-- Your custom scripts -->
+  <script>
+    // Code for your navigation (using the toggle icon)
+    $(document).ready(function() {
+      // Navigation Toggle
+      $("#icon_").click(function() {
+        $("#content_").toggleClass("show");
+        $("#icon_").toggleClass("fa-bars fa-times");
+      });
+
+      // Smooth Scrolling to Sections
+      $('a[href*="#"]').not('[href="#"]').click(function(event) {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top - 50 // Adjust the offset as needed
+            }, 1000, function() {
+              // When done, add hash to URL
+              if (window.location.pathname.replace(/^\//, '') != this.pathname.replace(/^\//, '')) {
+                window.location.hash = this.hash;
+              }
+            });
+          }
+        }
+      });
+
+      // Popup Modal Logic (Example with Bootstrap Modals)
+      $('.popup-button button').click(function() {
+        $(this).closest('.popup').removeClass('open');
+      });
+      
+      // Example of handling keyboard input for popup closing
+      $(document).on('keypress', '.popup', function(event) {
+        if (event.keyCode === 13) {
+          $(this).find('.popup-button button').click();
+        }
+      });
+
+      // Handling redirects (you'll need to define Url object or modify this)
+      $('select[onchange]').change(function() {
+        window.location.href = $(this).val();
+      });
+
+      // Example of handling link clicks for demo buttons
+      $('.btn-outline-primary[href^="https://"]').click(function(event) {
+        event.preventDefault();
+        window.open($(this).attr('href'), '_blank');
+      });
+
+    });
+
+    // Url function (replace with your actual Url implementation)
+    var Url = {
+      param: function(name, defaultValue) {
+        // Your logic to get URL parameters
+        return defaultValue; 
+      }
+    };
