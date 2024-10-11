@@ -46,6 +46,20 @@
       padding: 10px;
       font-weight: bold;
     }
+
+          /* Default styles for all screen sizes */
+    .mt-5 iframe {
+      width: 100%; 
+      height: auto; 
+      aspect-ratio: 16/9; 
+    }
+
+    /* Media query for phones (adjust the breakpoint as needed) */
+    @media (max-width: 768px) { 
+      .mt-5 iframe {
+        height: 250px; /* Set a fixed height on smaller screens */
+      }
+    }
   </style>
 </head>
 <body>
